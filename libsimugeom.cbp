@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libsimugeom" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/simugeom" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/simugeom" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pedantic" />
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-Wextra" />
+			<Add option="-fopenmp" />
+			<Add directory="eigen339" />
+		</Compiler>
+		<Linker>
+			<Add option="-fopenmp -lSDL2_gfx -lSDl2.dll -lSDL2main" />
+		</Linker>
+		<Unit filename="include/GeomAnnealer.h" />
+		<Unit filename="include/GeomModel.h" />
+		<Unit filename="include/GeomPose.h" />
+		<Unit filename="include/GeomRenderer.h" />
+		<Unit filename="include/GeomScene.h" />
+		<Unit filename="include/GeomSceneIO.h" />
+		<Unit filename="include/GeomValidity.h" />
+		<Unit filename="include/ObjClass.h" />
+		<Unit filename="include/ObjClassSet.h" />
+		<Unit filename="src/GeomAnnealer.cpp" />
+		<Unit filename="src/GeomModel.cpp" />
+		<Unit filename="src/GeomPose.cpp" />
+		<Unit filename="src/GeomRenderer.cpp" />
+		<Unit filename="src/GeomScene.cpp" />
+		<Unit filename="src/GeomSceneIO.cpp" />
+		<Unit filename="src/GeomValidity.cpp" />
+		<Unit filename="src/ObjClass.cpp" />
+		<Unit filename="src/ObjClassSet.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<fortran_project />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

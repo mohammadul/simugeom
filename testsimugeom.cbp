@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="testsimugeom" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/testsimugeom" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="bin/Debug/libsimugeom.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="bin/Debug/libsimugeom.a" />
+					<Add library="libmeshlib.a" />
+					<Add library="SDL2_gfx" />
+					<Add library="SDL2main" />
+					<Add library="SDL2" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="imm32" />
+					<Add library="version" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="ws2_32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/testsimugeom" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option external_deps="bin/Release/libsimugeom.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="bin/Release/libsimugeom.a" />
+					<Add library="libmeshlib.a" />
+					<Add library="SDL2_gfx" />
+					<Add library="SDL2main" />
+					<Add library="SDL2" />
+					<Add library="ole32" />
+					<Add library="oleaut32" />
+					<Add library="imm32" />
+					<Add library="version" />
+					<Add library="gdi32" />
+					<Add library="winmm" />
+					<Add library="ws2_32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pedantic" />
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-Wextra" />
+			<Add directory="eigen339" />
+		</Compiler>
+		<Linker>
+			<Add option="-lSDL2_gfx -lSDL2main -lSDL2" />
+		</Linker>
+		<Unit filename="resources/appsimugeom.ico" />
+		<Unit filename="resources/resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="test/testmain.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
