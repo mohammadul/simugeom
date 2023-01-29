@@ -1,6 +1,6 @@
 # simugeom - program package for geometry simulation 
 
-
+Reference: A. Handa, V. Pătrăucean, S. Stent and R. Cipolla, "SceneNet: An annotated model generator for indoor scene understanding," 2016 IEEE International Conference on Robotics and Automation (ICRA), Stockholm, Sweden, 2016, pp. 5737-5743, doi: 10.1109/ICRA.2016.7487797.
 
 
     simugeom - program package for geometry simulation 
